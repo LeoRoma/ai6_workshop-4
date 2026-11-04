@@ -111,17 +111,17 @@ Format your draft `SECURITY_AUDIT.md` using the template below and fill it out:
 
 ### Vulnerability 1: [Title]
 **Location:** [Where in the architecture]
-**Risk:** [What could go wrong]
+**Risk:** is that anyone can access the storage container and read the files without logging in or having a proper authentication token.
 **Severity:** [High/Medium/Low]
 
 ### Vulnerability 2: [Title]
 **Location:** [Where in the architecture]
-**Risk:** [What could go wrong]
+**Risk:** The issue is that TLS 1.0 is deprecated, which makes the connection much less secure.
 **Severity:** [High/Medium/Low]
 
 ### Vulnerability 3: [Title]
 **Location:** [Where in the architecture]
-**Risk:** [What could go wrong]
+**Risk:** the “God Mode” token is a problem because it doesn’t use RBAC. With RBAC, you can give different roles different levels of access. For example, developers would have one token, data scientists another, and so on. Also, it never expires, and there isn't any token rotation
 **Severity:** [High/Medium/Low]
 
 ## Recommendations
